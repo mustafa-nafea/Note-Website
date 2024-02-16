@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CAT NOTES</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="notes.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    </head>
+    <body>
+        
+        <div class ="page">
+            <div id = "login-page">
+                <h1>Login</h1>
+                <form id = "login-form">
+                    <label for = "username">Username</label>
+                    <input type = "text" id = "username">
+                    <label for = "password">Password</label>
+                    <input type = "password" id = "password">
+                    <button type="submit" onclick="login()">Login</button>
+                </form>
+                <p>If You dont have an account click <a href="signup.html">here</a> to signup..</p>
+            </div>
+            <div id = "notes-page" style="display: none;">
+                <h1>Notes</h1>
+                <input type="text" id = "notes-input" placeholder="Type your note here... "/>
+                <button type="submit" onclick="addNote()">Add Note</button>
+                <ul id="notes-list"></ul>
+                <button type="submit" onclick="logout()">Log Out</button>
+            </div>
+        </div>
+        <script src="notes.js"></script>
+    </body>
+</html>
